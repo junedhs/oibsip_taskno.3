@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <style>
+        *{
+            background-color: black;
+            color:#fff;
+        }
+        .container{
+            text-align: center;
+            margin-top:200px;
+        }
+        input{
+            border-color: blue;
+            box-shadow: 0px 5px 20px red;
+            font-size: 20px;
+        }
+        .button{
+            color:white;
+            background-color:blue ;
+            height:auto;
+            width: 200px;
+            border:none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <label for="celsius">Celsius</label>
+        <input id="celsius" type="text" placeholder="Enter Celsius">
+        <button class="button" onclick="convertFahrenheit()">Convert Fahrenheit</button>
+
+        <br>
+        <br>
+        <label for="fahrenheit">Fahrenheit</label>
+        <input id="fahrenheit" type="text" placeholder="Enter Fahrenheit">
+        <button class="button" onclick="convertCelsius()">Convert Celsius</button>
+
+        <br>
+        <br>
+        <button class="button" onclick="reset()">reset</button>
+    </div>
+
+    <script src="program.js"></script>
+    
+</body>
+</html>
